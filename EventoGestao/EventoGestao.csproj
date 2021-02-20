@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,12 +85,16 @@
     <Compile Include="ConsultaPessoa.Designer.cs">
       <DependentUpon>ConsultaPessoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\DataSerializer.cs" />
     <Compile Include="Gestao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gestao.Designer.cs">
       <DependentUpon>Gestao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Cafe.cs" />
+    <Compile Include="Objects\Evento.cs" />
+    <Compile Include="Objects\Pessoa.cs" />
     <Compile Include="Organizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +136,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

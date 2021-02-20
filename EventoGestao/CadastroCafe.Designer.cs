@@ -30,10 +30,10 @@ namespace EventoGestao
         private void InitializeComponent()
         {
             this.btnCloseCadastroCafe = new System.Windows.Forms.Button();
-            this.labelCadastroEventoStatus = new System.Windows.Forms.Label();
+            this.labelCadastroCafeStatus = new System.Windows.Forms.Label();
             this.btnCadastrarEvento = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbEventoNome = new System.Windows.Forms.TextBox();
+            this.labelNomeSala = new System.Windows.Forms.Label();
+            this.tbCafeNome = new System.Windows.Forms.TextBox();
             this.labelCadastroCafe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -47,16 +47,16 @@ namespace EventoGestao
             this.btnCloseCadastroCafe.UseVisualStyleBackColor = true;
             this.btnCloseCadastroCafe.Click += new System.EventHandler(this.btnCloseCadastroCafe_Click);
             // 
-            // labelCadastroEventoStatus
+            // labelCadastroCafeStatus
             // 
-            this.labelCadastroEventoStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelCadastroEventoStatus.AutoSize = true;
-            this.labelCadastroEventoStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCadastroEventoStatus.Location = new System.Drawing.Point(296, 337);
-            this.labelCadastroEventoStatus.Name = "labelCadastroEventoStatus";
-            this.labelCadastroEventoStatus.Size = new System.Drawing.Size(48, 17);
-            this.labelCadastroEventoStatus.TabIndex = 22;
-            this.labelCadastroEventoStatus.Text = "Status";
+            this.labelCadastroCafeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCadastroCafeStatus.AutoSize = true;
+            this.labelCadastroCafeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroCafeStatus.Location = new System.Drawing.Point(296, 337);
+            this.labelCadastroCafeStatus.Name = "labelCadastroCafeStatus";
+            this.labelCadastroCafeStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelCadastroCafeStatus.TabIndex = 22;
+            this.labelCadastroCafeStatus.Text = "Status";
             // 
             // btnCadastrarEvento
             // 
@@ -68,24 +68,25 @@ namespace EventoGestao
             this.btnCadastrarEvento.TabIndex = 21;
             this.btnCadastrarEvento.Text = "Cadastrar";
             this.btnCadastrarEvento.UseVisualStyleBackColor = true;
+            this.btnCadastrarEvento.Click += new System.EventHandler(this.btnCadastrarEvento_Click);
             // 
-            // label1
+            // labelNomeSala
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 193);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Nome da sala:";
+            this.labelNomeSala.AutoSize = true;
+            this.labelNomeSala.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeSala.Location = new System.Drawing.Point(54, 193);
+            this.labelNomeSala.Name = "labelNomeSala";
+            this.labelNomeSala.Size = new System.Drawing.Size(99, 17);
+            this.labelNomeSala.TabIndex = 18;
+            this.labelNomeSala.Text = "Nome da sala:";
             // 
-            // tbEventoNome
+            // tbCafeNome
             // 
-            this.tbEventoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEventoNome.Location = new System.Drawing.Point(163, 190);
-            this.tbEventoNome.Name = "tbEventoNome";
-            this.tbEventoNome.Size = new System.Drawing.Size(265, 23);
-            this.tbEventoNome.TabIndex = 17;
+            this.tbCafeNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCafeNome.Location = new System.Drawing.Point(163, 190);
+            this.tbCafeNome.Name = "tbCafeNome";
+            this.tbCafeNome.Size = new System.Drawing.Size(265, 23);
+            this.tbCafeNome.TabIndex = 17;
             // 
             // labelCadastroCafe
             // 
@@ -102,10 +103,10 @@ namespace EventoGestao
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 522);
-            this.Controls.Add(this.labelCadastroEventoStatus);
+            this.Controls.Add(this.labelCadastroCafeStatus);
             this.Controls.Add(this.btnCadastrarEvento);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbEventoNome);
+            this.Controls.Add(this.labelNomeSala);
+            this.Controls.Add(this.tbCafeNome);
             this.Controls.Add(this.labelCadastroCafe);
             this.Controls.Add(this.btnCloseCadastroCafe);
             this.Name = "CadastroCafe";
@@ -118,10 +119,10 @@ namespace EventoGestao
         #endregion
 
         private System.Windows.Forms.Button btnCloseCadastroCafe;
-        private System.Windows.Forms.Label labelCadastroEventoStatus;
+        private System.Windows.Forms.Label labelCadastroCafeStatus;
         private System.Windows.Forms.Button btnCadastrarEvento;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbEventoNome;
+        private System.Windows.Forms.Label labelNomeSala;
+        private System.Windows.Forms.TextBox tbCafeNome;
         private System.Windows.Forms.Label labelCadastroCafe;
     }
 }

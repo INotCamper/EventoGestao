@@ -34,10 +34,10 @@ namespace EventoGestao
             this.tbEventoNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelLotacao = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numLotacao = new System.Windows.Forms.NumericUpDown();
             this.btnCadastrarEvento = new System.Windows.Forms.Button();
             this.labelCadastroEventoStatus = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLotacao)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCloseCadastroEvento
@@ -88,23 +88,13 @@ namespace EventoGestao
             this.labelLotacao.TabIndex = 12;
             this.labelLotacao.Text = "Lotação:";
             // 
-            // numericUpDown1
+            // numLotacao
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(162, 225);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown1.TabIndex = 13;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numLotacao.Location = new System.Drawing.Point(162, 225);
+            this.numLotacao.Name = "numLotacao";
+            this.numLotacao.Size = new System.Drawing.Size(120, 23);
+            this.numLotacao.TabIndex = 13;
             // 
             // btnCadastrarEvento
             // 
@@ -116,6 +106,7 @@ namespace EventoGestao
             this.btnCadastrarEvento.TabIndex = 14;
             this.btnCadastrarEvento.Text = "Cadastrar";
             this.btnCadastrarEvento.UseVisualStyleBackColor = true;
+            this.btnCadastrarEvento.Click += new System.EventHandler(this.btnCadastrarEvento_Click);
             // 
             // labelCadastroEventoStatus
             // 
@@ -135,7 +126,7 @@ namespace EventoGestao
             this.ClientSize = new System.Drawing.Size(668, 522);
             this.Controls.Add(this.labelCadastroEventoStatus);
             this.Controls.Add(this.btnCadastrarEvento);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numLotacao);
             this.Controls.Add(this.labelLotacao);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbEventoNome);
@@ -143,7 +134,7 @@ namespace EventoGestao
             this.Controls.Add(this.btnCloseCadastroEvento);
             this.Name = "CadastroEvento";
             this.Text = "CadastroEvento";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLotacao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,7 +147,7 @@ namespace EventoGestao
         private System.Windows.Forms.TextBox tbEventoNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelLotacao;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numLotacao;
         private System.Windows.Forms.Button btnCadastrarEvento;
         private System.Windows.Forms.Label labelCadastroEventoStatus;
     }
