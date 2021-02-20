@@ -55,6 +55,41 @@ namespace EventoGestao.Data
             }
             return c;
         }
+        /*
+        private JObject JsonDeserializeJObject(string filePath)
+        {
+            JObject o = null;
+            JsonSerializer jsonSerializer = new JsonSerializer();
+            if (File.Exists(filePath))
+            {
+                StreamReader sr = new StreamReader(filePath);
+                JsonReader jsonReader = new JsonTextReader(sr);
+                o = jsonSerializer.Deserialize(jsonReader) as JObject;
+                jsonReader.Close();
+                sr.Close();
+            }
+            return o;
+        }
+        */
+
+        public Evento SearchEvento(string n, string filePath)
+        {
+            List<Evento> le = JsonDeserializeEvento(filePath);
+            Evento e = le.Find(x => x.nome == n);
+            return e;
+        }
+        public Cafe SearchCafe(string n, string filePath)
+        {
+            List<Cafe> le = JsonDeserializeCafe(filePath);
+            Cafe c = le.Find(x => x.nome == n);
+            return c;
+        }
+        public Pessoa SearchPessoa(string n, string s, string filePath)
+        {
+            List<Pessoa> le = JsonDeserializePessoas(filePath);
+            Pessoa p = le.Find(x => x.nome == n && x.sobrenome == s);
+            return p;
+        }
 
         public static T ToClass<T>(string data, JsonSerializerSettings jsonSettings = null)
         {

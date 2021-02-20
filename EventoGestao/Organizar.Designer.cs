@@ -30,30 +30,22 @@ namespace EventoGestao
         private void InitializeComponent()
         {
             this.btnOrganizar = new System.Windows.Forms.Button();
-            this.labelStatus = new System.Windows.Forms.Label();
             this.btnCloseOrganizar = new System.Windows.Forms.Button();
+            this.pbStatus = new System.Windows.Forms.ProgressBar();
+            this.lvStatus = new System.Windows.Forms.ListView();
+            this.labelOrganizar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOrganizar
             // 
             this.btnOrganizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrganizar.Location = new System.Drawing.Point(67, 119);
+            this.btnOrganizar.Location = new System.Drawing.Point(67, 171);
             this.btnOrganizar.Name = "btnOrganizar";
             this.btnOrganizar.Size = new System.Drawing.Size(225, 35);
             this.btnOrganizar.TabIndex = 0;
             this.btnOrganizar.Text = "Organizar Treinamento";
             this.btnOrganizar.UseVisualStyleBackColor = true;
-            // 
-            // labelStatus
-            // 
-            this.labelStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(64, 270);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(48, 17);
-            this.labelStatus.TabIndex = 1;
-            this.labelStatus.Text = "Status";
+            this.btnOrganizar.Click += new System.EventHandler(this.btnOrganizar_Click);
             // 
             // btnCloseOrganizar
             // 
@@ -65,13 +57,43 @@ namespace EventoGestao
             this.btnCloseOrganizar.UseVisualStyleBackColor = true;
             this.btnCloseOrganizar.Click += new System.EventHandler(this.btnCloseOrganizar_Click);
             // 
+            // pbStatus
+            // 
+            this.pbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbStatus.Location = new System.Drawing.Point(67, 257);
+            this.pbStatus.Name = "pbStatus";
+            this.pbStatus.Size = new System.Drawing.Size(524, 23);
+            this.pbStatus.TabIndex = 9;
+            // 
+            // lvStatus
+            // 
+            this.lvStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvStatus.HideSelection = false;
+            this.lvStatus.Location = new System.Drawing.Point(67, 286);
+            this.lvStatus.Name = "lvStatus";
+            this.lvStatus.Size = new System.Drawing.Size(524, 181);
+            this.lvStatus.TabIndex = 10;
+            this.lvStatus.UseCompatibleStateImageBehavior = false;
+            // 
+            // labelOrganizar
+            // 
+            this.labelOrganizar.AutoSize = true;
+            this.labelOrganizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOrganizar.Location = new System.Drawing.Point(30, 101);
+            this.labelOrganizar.Name = "labelOrganizar";
+            this.labelOrganizar.Size = new System.Drawing.Size(229, 25);
+            this.labelOrganizar.TabIndex = 25;
+            this.labelOrganizar.Text = "Organizar o Treinamento";
+            // 
             // Organizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 522);
+            this.Controls.Add(this.labelOrganizar);
+            this.Controls.Add(this.lvStatus);
+            this.Controls.Add(this.pbStatus);
             this.Controls.Add(this.btnCloseOrganizar);
-            this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.btnOrganizar);
             this.Name = "Organizar";
             this.Text = "Organizar";
@@ -83,7 +105,9 @@ namespace EventoGestao
         #endregion
 
         private System.Windows.Forms.Button btnOrganizar;
-        private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Button btnCloseOrganizar;
+        private System.Windows.Forms.ProgressBar pbStatus;
+        private System.Windows.Forms.ListView lvStatus;
+        private System.Windows.Forms.Label labelOrganizar;
     }
 }

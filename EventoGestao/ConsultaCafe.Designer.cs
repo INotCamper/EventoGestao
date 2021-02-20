@@ -32,13 +32,15 @@ namespace EventoGestao
             this.btnCloseConsultaCafe = new System.Windows.Forms.Button();
             this.labelEtapa2 = new System.Windows.Forms.Label();
             this.labelEtapa1 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvEtapa2 = new System.Windows.Forms.ListView();
+            this.lvEtapa1 = new System.Windows.Forms.ListView();
             this.labelConsultaCafeNome = new System.Windows.Forms.Label();
             this.tbConsultaCafeNome = new System.Windows.Forms.TextBox();
-            this.labelConsultaEventoStatus = new System.Windows.Forms.Label();
+            this.labelConsultaCafeStatus = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.labelConsultaCafe = new System.Windows.Forms.Label();
+            this.labelCafeNome = new System.Windows.Forms.Label();
+            this.labelEspacoProcuradoNome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCloseConsultaCafe
@@ -73,25 +75,25 @@ namespace EventoGestao
             this.labelEtapa1.TabIndex = 31;
             this.labelEtapa1.Text = "Etapa 1:";
             // 
-            // listView2
+            // lvEtapa2
             // 
-            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(338, 295);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(250, 220);
-            this.listView2.TabIndex = 30;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lvEtapa2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa2.HideSelection = false;
+            this.lvEtapa2.Location = new System.Drawing.Point(338, 295);
+            this.lvEtapa2.Name = "lvEtapa2";
+            this.lvEtapa2.Size = new System.Drawing.Size(250, 220);
+            this.lvEtapa2.TabIndex = 30;
+            this.lvEtapa2.UseCompatibleStateImageBehavior = false;
             // 
-            // listView1
+            // lvEtapa1
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(74, 295);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(250, 220);
-            this.listView1.TabIndex = 29;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvEtapa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa1.HideSelection = false;
+            this.lvEtapa1.Location = new System.Drawing.Point(74, 295);
+            this.lvEtapa1.Name = "lvEtapa1";
+            this.lvEtapa1.Size = new System.Drawing.Size(250, 220);
+            this.lvEtapa1.TabIndex = 29;
+            this.lvEtapa1.UseCompatibleStateImageBehavior = false;
             // 
             // labelConsultaCafeNome
             // 
@@ -111,16 +113,16 @@ namespace EventoGestao
             this.tbConsultaCafeNome.Size = new System.Drawing.Size(261, 23);
             this.tbConsultaCafeNome.TabIndex = 27;
             // 
-            // labelConsultaEventoStatus
+            // labelConsultaCafeStatus
             // 
-            this.labelConsultaEventoStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelConsultaEventoStatus.AutoSize = true;
-            this.labelConsultaEventoStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConsultaEventoStatus.Location = new System.Drawing.Point(525, 205);
-            this.labelConsultaEventoStatus.Name = "labelConsultaEventoStatus";
-            this.labelConsultaEventoStatus.Size = new System.Drawing.Size(48, 17);
-            this.labelConsultaEventoStatus.TabIndex = 26;
-            this.labelConsultaEventoStatus.Text = "Status";
+            this.labelConsultaCafeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelConsultaCafeStatus.AutoSize = true;
+            this.labelConsultaCafeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaCafeStatus.Location = new System.Drawing.Point(525, 205);
+            this.labelConsultaCafeStatus.Name = "labelConsultaCafeStatus";
+            this.labelConsultaCafeStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelConsultaCafeStatus.TabIndex = 26;
+            this.labelConsultaCafeStatus.Text = "Status";
             // 
             // btnConsultar
             // 
@@ -132,6 +134,7 @@ namespace EventoGestao
             this.btnConsultar.TabIndex = 25;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // labelConsultaCafe
             // 
@@ -143,18 +146,39 @@ namespace EventoGestao
             this.labelConsultaCafe.TabIndex = 24;
             this.labelConsultaCafe.Text = "Consultar um Espaço de Café";
             // 
+            // labelCafeNome
+            // 
+            this.labelCafeNome.AutoSize = true;
+            this.labelCafeNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCafeNome.Location = new System.Drawing.Point(136, 230);
+            this.labelCafeNome.Name = "labelCafeNome";
+            this.labelCafeNome.Size = new System.Drawing.Size(0, 17);
+            this.labelCafeNome.TabIndex = 34;
+            // 
+            // labelEspacoProcuradoNome
+            // 
+            this.labelEspacoProcuradoNome.AutoSize = true;
+            this.labelEspacoProcuradoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEspacoProcuradoNome.Location = new System.Drawing.Point(71, 230);
+            this.labelEspacoProcuradoNome.Name = "labelEspacoProcuradoNome";
+            this.labelEspacoProcuradoNome.Size = new System.Drawing.Size(59, 17);
+            this.labelEspacoProcuradoNome.TabIndex = 33;
+            this.labelEspacoProcuradoNome.Text = "Espaço:";
+            // 
             // ConsultaCafe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 561);
+            this.Controls.Add(this.labelCafeNome);
+            this.Controls.Add(this.labelEspacoProcuradoNome);
             this.Controls.Add(this.labelEtapa2);
             this.Controls.Add(this.labelEtapa1);
-            this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvEtapa2);
+            this.Controls.Add(this.lvEtapa1);
             this.Controls.Add(this.labelConsultaCafeNome);
             this.Controls.Add(this.tbConsultaCafeNome);
-            this.Controls.Add(this.labelConsultaEventoStatus);
+            this.Controls.Add(this.labelConsultaCafeStatus);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.labelConsultaCafe);
             this.Controls.Add(this.btnCloseConsultaCafe);
@@ -170,12 +194,14 @@ namespace EventoGestao
         private System.Windows.Forms.Button btnCloseConsultaCafe;
         private System.Windows.Forms.Label labelEtapa2;
         private System.Windows.Forms.Label labelEtapa1;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvEtapa2;
+        private System.Windows.Forms.ListView lvEtapa1;
         private System.Windows.Forms.Label labelConsultaCafeNome;
         private System.Windows.Forms.TextBox tbConsultaCafeNome;
-        private System.Windows.Forms.Label labelConsultaEventoStatus;
+        private System.Windows.Forms.Label labelConsultaCafeStatus;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Label labelConsultaCafe;
+        private System.Windows.Forms.Label labelCafeNome;
+        private System.Windows.Forms.Label labelEspacoProcuradoNome;
     }
 }

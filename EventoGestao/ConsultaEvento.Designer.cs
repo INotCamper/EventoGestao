@@ -35,10 +35,14 @@ namespace EventoGestao
             this.btnConsultar = new System.Windows.Forms.Button();
             this.labelConsultaEventoNome = new System.Windows.Forms.Label();
             this.tbConsultaEventoNome = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvEtapa1 = new System.Windows.Forms.ListView();
+            this.lvEtapa2 = new System.Windows.Forms.ListView();
             this.labelEtapa1 = new System.Windows.Forms.Label();
             this.labelEtapa2 = new System.Windows.Forms.Label();
+            this.labelSalaProcuradaNome = new System.Windows.Forms.Label();
+            this.labelSalaNome = new System.Windows.Forms.Label();
+            this.labelSalaLotacao = new System.Windows.Forms.Label();
+            this.labelSapaProcuradaLotacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCloseConsultaEvento
@@ -82,6 +86,7 @@ namespace EventoGestao
             this.btnConsultar.TabIndex = 16;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // labelConsultaEventoNome
             // 
@@ -101,25 +106,25 @@ namespace EventoGestao
             this.tbConsultaEventoNome.Size = new System.Drawing.Size(261, 23);
             this.tbConsultaEventoNome.TabIndex = 18;
             // 
-            // listView1
+            // lvEtapa1
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(74, 295);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(250, 220);
-            this.listView1.TabIndex = 20;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvEtapa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa1.HideSelection = false;
+            this.lvEtapa1.Location = new System.Drawing.Point(74, 295);
+            this.lvEtapa1.Name = "lvEtapa1";
+            this.lvEtapa1.Size = new System.Drawing.Size(250, 220);
+            this.lvEtapa1.TabIndex = 20;
+            this.lvEtapa1.UseCompatibleStateImageBehavior = false;
             // 
-            // listView2
+            // lvEtapa2
             // 
-            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(338, 295);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(250, 220);
-            this.listView2.TabIndex = 21;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lvEtapa2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa2.HideSelection = false;
+            this.lvEtapa2.Location = new System.Drawing.Point(338, 295);
+            this.lvEtapa2.Name = "lvEtapa2";
+            this.lvEtapa2.Size = new System.Drawing.Size(250, 220);
+            this.lvEtapa2.TabIndex = 21;
+            this.lvEtapa2.UseCompatibleStateImageBehavior = false;
             // 
             // labelEtapa1
             // 
@@ -143,15 +148,57 @@ namespace EventoGestao
             this.labelEtapa2.TabIndex = 23;
             this.labelEtapa2.Text = "Etapa 2:";
             // 
+            // labelSalaProcuradaNome
+            // 
+            this.labelSalaProcuradaNome.AutoSize = true;
+            this.labelSalaProcuradaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaProcuradaNome.Location = new System.Drawing.Point(74, 225);
+            this.labelSalaProcuradaNome.Name = "labelSalaProcuradaNome";
+            this.labelSalaProcuradaNome.Size = new System.Drawing.Size(40, 17);
+            this.labelSalaProcuradaNome.TabIndex = 24;
+            this.labelSalaProcuradaNome.Text = "Sala:";
+            // 
+            // labelSalaNome
+            // 
+            this.labelSalaNome.AutoSize = true;
+            this.labelSalaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaNome.Location = new System.Drawing.Point(120, 225);
+            this.labelSalaNome.Name = "labelSalaNome";
+            this.labelSalaNome.Size = new System.Drawing.Size(0, 17);
+            this.labelSalaNome.TabIndex = 25;
+            // 
+            // labelSalaLotacao
+            // 
+            this.labelSalaLotacao.AutoSize = true;
+            this.labelSalaLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaLotacao.Location = new System.Drawing.Point(404, 225);
+            this.labelSalaLotacao.Name = "labelSalaLotacao";
+            this.labelSalaLotacao.Size = new System.Drawing.Size(0, 17);
+            this.labelSalaLotacao.TabIndex = 27;
+            // 
+            // labelSapaProcuradaLotacao
+            // 
+            this.labelSapaProcuradaLotacao.AutoSize = true;
+            this.labelSapaProcuradaLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSapaProcuradaLotacao.Location = new System.Drawing.Point(335, 225);
+            this.labelSapaProcuradaLotacao.Name = "labelSapaProcuradaLotacao";
+            this.labelSapaProcuradaLotacao.Size = new System.Drawing.Size(63, 17);
+            this.labelSapaProcuradaLotacao.TabIndex = 26;
+            this.labelSapaProcuradaLotacao.Text = "Lotação:";
+            // 
             // ConsultaEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 561);
+            this.Controls.Add(this.labelSalaLotacao);
+            this.Controls.Add(this.labelSapaProcuradaLotacao);
+            this.Controls.Add(this.labelSalaNome);
+            this.Controls.Add(this.labelSalaProcuradaNome);
             this.Controls.Add(this.labelEtapa2);
             this.Controls.Add(this.labelEtapa1);
-            this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvEtapa2);
+            this.Controls.Add(this.lvEtapa1);
             this.Controls.Add(this.labelConsultaEventoNome);
             this.Controls.Add(this.tbConsultaEventoNome);
             this.Controls.Add(this.labelConsultaEventoStatus);
@@ -173,9 +220,13 @@ namespace EventoGestao
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Label labelConsultaEventoNome;
         private System.Windows.Forms.TextBox tbConsultaEventoNome;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvEtapa1;
+        private System.Windows.Forms.ListView lvEtapa2;
         private System.Windows.Forms.Label labelEtapa1;
         private System.Windows.Forms.Label labelEtapa2;
+        private System.Windows.Forms.Label labelSalaProcuradaNome;
+        private System.Windows.Forms.Label labelSalaNome;
+        private System.Windows.Forms.Label labelSalaLotacao;
+        private System.Windows.Forms.Label labelSapaProcuradaLotacao;
     }
 }
