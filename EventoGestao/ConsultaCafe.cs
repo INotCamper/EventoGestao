@@ -48,36 +48,37 @@ namespace EventoGestao
                 return;
             }
             labelCafeNome.Text = cafe.nome;
-            lvEtapa1.Clear();
+            lvEtapa1.Items.Clear();
             if (cafe.pessoas1 != null)
             {
                 foreach (var item in cafe.pessoas1)
                 {
-                    var listViewItem = new ListViewItem(item);
-                    lvEtapa1.Items.Add(listViewItem);
+                    CreateAddListItem(item, lvEtapa1);
                 }
             }
             else
             {
-                var listViewItem = new ListViewItem("Evento não organizado");
-                lvEtapa1.Items.Add(listViewItem);
+                CreateAddListItem("Evento não organizado", lvEtapa1);
             }
-            lvEtapa2.Clear();
+            lvEtapa2.Items.Clear();
             if (cafe.pessoas2 != null)
             {
                 foreach (var item in cafe.pessoas2)
                 {
-                    var listViewItem = new ListViewItem(item);
-                    lvEtapa2.Items.Add(listViewItem);
+                    CreateAddListItem(item, lvEtapa2);
                 }
             }
             else
             {
-                var listViewItem = new ListViewItem("Evento não organizado");
-                lvEtapa2.Items.Add(listViewItem);
+                CreateAddListItem("Evento não organizado", lvEtapa2);
             }
             labelConsultaCafeStatus.Text = "Espaço encontrado com sucesso!";
             labelConsultaCafeStatus.ForeColor = Color.Green;
         }
-    }
+        private void CreateAddListItem(string nome, ListView lv)
+        {
+            var listViewItem = new ListViewItem(nome);
+            lv.Items.Add(listViewItem);
+        }
+    }    
 }
