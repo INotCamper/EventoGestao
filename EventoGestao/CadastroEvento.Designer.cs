@@ -42,6 +42,8 @@ namespace EventoGestao
             // 
             // btnCloseCadastroEvento
             // 
+            this.btnCloseCadastroEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseCadastroEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCloseCadastroEvento.Location = new System.Drawing.Point(35, 35);
             this.btnCloseCadastroEvento.Name = "btnCloseCadastroEvento";
             this.btnCloseCadastroEvento.Size = new System.Drawing.Size(30, 30);
@@ -54,6 +56,7 @@ namespace EventoGestao
             // 
             this.labelCadastroEvento.AutoSize = true;
             this.labelCadastroEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroEvento.Location = new System.Drawing.Point(30, 101);
             this.labelCadastroEvento.Name = "labelCadastroEvento";
             this.labelCadastroEvento.Size = new System.Drawing.Size(232, 25);
@@ -62,6 +65,7 @@ namespace EventoGestao
             // 
             // tbEventoNome
             // 
+            this.tbEventoNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbEventoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEventoNome.Location = new System.Drawing.Point(162, 159);
             this.tbEventoNome.Name = "tbEventoNome";
@@ -72,6 +76,7 @@ namespace EventoGestao
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.label1.Location = new System.Drawing.Point(53, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 17);
@@ -82,6 +87,7 @@ namespace EventoGestao
             // 
             this.labelLotacao.AutoSize = true;
             this.labelLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLotacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelLotacao.Location = new System.Drawing.Point(89, 227);
             this.labelLotacao.Name = "labelLotacao";
             this.labelLotacao.Size = new System.Drawing.Size(63, 17);
@@ -90,6 +96,7 @@ namespace EventoGestao
             // 
             // numLotacao
             // 
+            this.numLotacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.numLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numLotacao.Location = new System.Drawing.Point(162, 225);
             this.numLotacao.Name = "numLotacao";
@@ -99,7 +106,9 @@ namespace EventoGestao
             // btnCadastrarEvento
             // 
             this.btnCadastrarEvento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastrarEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCadastrarEvento.Location = new System.Drawing.Point(273, 389);
             this.btnCadastrarEvento.Name = "btnCadastrarEvento";
             this.btnCadastrarEvento.Size = new System.Drawing.Size(100, 30);
@@ -113,16 +122,17 @@ namespace EventoGestao
             this.labelCadastroEventoStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCadastroEventoStatus.AutoSize = true;
             this.labelCadastroEventoStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroEventoStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroEventoStatus.Location = new System.Drawing.Point(296, 337);
             this.labelCadastroEventoStatus.Name = "labelCadastroEventoStatus";
-            this.labelCadastroEventoStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelCadastroEventoStatus.Size = new System.Drawing.Size(0, 17);
             this.labelCadastroEventoStatus.TabIndex = 15;
-            this.labelCadastroEventoStatus.Text = "Status";
             // 
             // CadastroEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(668, 522);
             this.Controls.Add(this.labelCadastroEventoStatus);
             this.Controls.Add(this.btnCadastrarEvento);

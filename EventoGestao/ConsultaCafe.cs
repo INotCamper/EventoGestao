@@ -48,6 +48,7 @@ namespace EventoGestao
                 return;
             }
             labelCafeNome.Text = cafe.nome;
+            labelLotacao.Text = cafe.lotacao.ToString();
             lvEtapa1.Items.Clear();
             if (cafe.pessoas1 != null)
             {

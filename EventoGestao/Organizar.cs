@@ -60,14 +60,27 @@ namespace EventoGestao
             //quantidade de pessoas por sala de evento
             int pessoasPorSala = pessoas.Count / eventos.Count;
             int pessoasSobrandoNaDivisaoPorSala = pessoas.Count % eventos.Count;
+            //quantidade de pessoas por espaco de cafe
+            int pessoasPorEspaco = pessoas.Count / cafes.Count;
+            int pessoasSobrandoNaDivisaoPorEspaco = pessoas.Count % cafes.Count;
 
             //verificar se salas tem capacidade para todas pessoas
             for (int i = 0; i < eventos.Count; i++)
             {
                 if (eventos[i].lotacao < pessoasPorSala)
                 {
-                    CreateAndAddNewErrorListItem("Salas não tem capacidade para todos alunos.");
-                    CreateAndAddNewErrorListItem("caso continue a diferença entre salas será maior do que uma pessoa!");
+                    CreateAndAddNewErrorListItem("Salas de evento não tem capacidade para todos alunos.");
+                    CreateAndAddNewErrorListItem("caso continue a diferença de pessoas entre salas será maior do que um!");
+                    return;
+                }
+            }
+            //verificar se salas tem capacidade para todas pessoas
+            for (int i = 0; i < cafes.Count; i++)
+            {
+                if (cafes[i].lotacao < pessoasPorEspaco)
+                {
+                    CreateAndAddNewErrorListItem("Espaços de café não tem capacidade para todos alunos.");
+                    CreateAndAddNewErrorListItem("caso continue a diferença de pessoas entre salas será maior do que um!");
                     return;
                 }
             }
@@ -84,11 +97,6 @@ namespace EventoGestao
             CreateAndAddNewNominalListItem("------------------------");
             CreateAndAddNewNominalListItem("Primeiro evento criado!");
             pbStatus.Value = 14;
-
-            //dividir pessoas para cafe
-
-            int pessoasPorEspaco = pessoas.Count / cafes.Count;
-            int pessoasSobrandoNaDivisaoPorEspaco = pessoas.Count % cafes.Count;
 
             //cria o primeiro cafe e preenche as variaveis com respectivos espaços de cafe e pessoas, conforme necessario
 

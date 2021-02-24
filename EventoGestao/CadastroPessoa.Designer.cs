@@ -42,6 +42,7 @@ namespace EventoGestao
             // btnCadastrar
             // 
             this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Location = new System.Drawing.Point(289, 428);
             this.btnCadastrar.Name = "btnCadastrar";
@@ -53,6 +54,7 @@ namespace EventoGestao
             // 
             // tbCadastroPessoaNome
             // 
+            this.tbCadastroPessoaNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbCadastroPessoaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCadastroPessoaNome.Location = new System.Drawing.Point(112, 165);
             this.tbCadastroPessoaNome.Name = "tbCadastroPessoaNome";
@@ -61,6 +63,7 @@ namespace EventoGestao
             // 
             // tbCadastroPessoaSobrenome
             // 
+            this.tbCadastroPessoaSobrenome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbCadastroPessoaSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCadastroPessoaSobrenome.Location = new System.Drawing.Point(148, 226);
             this.tbCadastroPessoaSobrenome.Name = "tbCadastroPessoaSobrenome";
@@ -71,6 +74,7 @@ namespace EventoGestao
             // 
             this.labelCadastroPessoa.AutoSize = true;
             this.labelCadastroPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroPessoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroPessoa.Location = new System.Drawing.Point(30, 101);
             this.labelCadastroPessoa.Name = "labelCadastroPessoa";
             this.labelCadastroPessoa.Size = new System.Drawing.Size(212, 25);
@@ -81,6 +85,7 @@ namespace EventoGestao
             // 
             this.labelCadastroPessoaNome.AutoSize = true;
             this.labelCadastroPessoaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroPessoaNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroPessoaNome.Location = new System.Drawing.Point(57, 166);
             this.labelCadastroPessoaNome.Name = "labelCadastroPessoaNome";
             this.labelCadastroPessoaNome.Size = new System.Drawing.Size(49, 17);
@@ -91,6 +96,7 @@ namespace EventoGestao
             // 
             this.labelCadastroPessoaSobrenome.AutoSize = true;
             this.labelCadastroPessoaSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroPessoaSobrenome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroPessoaSobrenome.Location = new System.Drawing.Point(57, 227);
             this.labelCadastroPessoaSobrenome.Name = "labelCadastroPessoaSobrenome";
             this.labelCadastroPessoaSobrenome.Size = new System.Drawing.Size(85, 17);
@@ -102,14 +108,16 @@ namespace EventoGestao
             this.labelCadastroPessoaStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCadastroPessoaStatus.AutoSize = true;
             this.labelCadastroPessoaStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastroPessoaStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelCadastroPessoaStatus.Location = new System.Drawing.Point(312, 376);
             this.labelCadastroPessoaStatus.Name = "labelCadastroPessoaStatus";
-            this.labelCadastroPessoaStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelCadastroPessoaStatus.Size = new System.Drawing.Size(0, 17);
             this.labelCadastroPessoaStatus.TabIndex = 6;
-            this.labelCadastroPessoaStatus.Text = "Status";
             // 
             // btnCloseCadastroPessoa
             // 
+            this.btnCloseCadastroPessoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseCadastroPessoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCloseCadastroPessoa.Location = new System.Drawing.Point(35, 35);
             this.btnCloseCadastroPessoa.Name = "btnCloseCadastroPessoa";
             this.btnCloseCadastroPessoa.Size = new System.Drawing.Size(30, 30);
@@ -122,6 +130,7 @@ namespace EventoGestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(684, 561);
             this.Controls.Add(this.btnCloseCadastroPessoa);
             this.Controls.Add(this.labelCadastroPessoaStatus);
@@ -131,6 +140,7 @@ namespace EventoGestao
             this.Controls.Add(this.tbCadastroPessoaSobrenome);
             this.Controls.Add(this.tbCadastroPessoaNome);
             this.Controls.Add(this.btnCadastrar);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.Name = "CadastroPessoa";
             this.Text = "CadastroPessoa";
             this.ResumeLayout(false);

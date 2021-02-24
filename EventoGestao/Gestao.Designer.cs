@@ -80,7 +80,7 @@ namespace EventoGestao
             // 
             this.btnConsultaCafe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsultaCafe.FlatAppearance.BorderSize = 0;
-            this.btnConsultaCafe.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnConsultaCafe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnConsultaCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaCafe.ForeColor = System.Drawing.Color.LightGray;
             this.btnConsultaCafe.Location = new System.Drawing.Point(0, 80);
@@ -97,7 +97,7 @@ namespace EventoGestao
             // 
             this.btnConsultaEvento.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsultaEvento.FlatAppearance.BorderSize = 0;
-            this.btnConsultaEvento.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnConsultaEvento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnConsultaEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaEvento.ForeColor = System.Drawing.Color.LightGray;
             this.btnConsultaEvento.Location = new System.Drawing.Point(0, 40);
@@ -114,7 +114,7 @@ namespace EventoGestao
             // 
             this.btnConsultaPessoa.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsultaPessoa.FlatAppearance.BorderSize = 0;
-            this.btnConsultaPessoa.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnConsultaPessoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnConsultaPessoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultaPessoa.ForeColor = System.Drawing.Color.LightGray;
             this.btnConsultaPessoa.Location = new System.Drawing.Point(0, 0);
@@ -131,7 +131,7 @@ namespace EventoGestao
             // 
             this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsulta.FlatAppearance.BorderSize = 0;
-            this.btnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.ForeColor = System.Drawing.Color.Silver;
             this.btnConsulta.Location = new System.Drawing.Point(0, 311);
@@ -148,7 +148,7 @@ namespace EventoGestao
             // 
             this.btnOrganizar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOrganizar.FlatAppearance.BorderSize = 0;
-            this.btnOrganizar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnOrganizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
             this.btnOrganizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrganizar.ForeColor = System.Drawing.Color.Silver;
             this.btnOrganizar.Location = new System.Drawing.Point(0, 271);
@@ -177,7 +177,7 @@ namespace EventoGestao
             // 
             this.btnCadastroCafe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCadastroCafe.FlatAppearance.BorderSize = 0;
-            this.btnCadastroCafe.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnCadastroCafe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnCadastroCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroCafe.ForeColor = System.Drawing.Color.LightGray;
             this.btnCadastroCafe.Location = new System.Drawing.Point(0, 80);
@@ -194,7 +194,7 @@ namespace EventoGestao
             // 
             this.btnCadastroEvento.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCadastroEvento.FlatAppearance.BorderSize = 0;
-            this.btnCadastroEvento.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnCadastroEvento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnCadastroEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroEvento.ForeColor = System.Drawing.Color.LightGray;
             this.btnCadastroEvento.Location = new System.Drawing.Point(0, 40);
@@ -211,7 +211,7 @@ namespace EventoGestao
             // 
             this.btnCadastroPessoa.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCadastroPessoa.FlatAppearance.BorderSize = 0;
-            this.btnCadastroPessoa.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnCadastroPessoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(72)))), ((int)(((byte)(79)))));
             this.btnCadastroPessoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroPessoa.ForeColor = System.Drawing.Color.LightGray;
             this.btnCadastroPessoa.Location = new System.Drawing.Point(0, 0);
@@ -228,7 +228,7 @@ namespace EventoGestao
             // 
             this.btnCadastro.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCadastro.FlatAppearance.BorderSize = 0;
-            this.btnCadastro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InfoText;
+            this.btnCadastro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastro.ForeColor = System.Drawing.Color.Silver;
             this.btnCadastro.Location = new System.Drawing.Point(0, 100);

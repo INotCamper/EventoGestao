@@ -10,12 +10,14 @@ namespace EventoGestao.Objects
     public class Cafe
     {
         public string nome { get; set; }
+        public int lotacao { get; set; }
         public string[] pessoas1 { get; set; }
         public string[] pessoas2 { get; set; }
         public Cafe() { }
-        public Cafe(string n)
+        public Cafe(string n, int l)
         {
             nome = n;
+            lotacao = l;
         }
     }
 }

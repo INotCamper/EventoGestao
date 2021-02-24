@@ -38,7 +38,7 @@ namespace EventoGestao
                 cafes = new List<Cafe>();
             }
             //cria o cafe com o que foi preenchido
-            Cafe ca = new Cafe(tbCafeNome.Text);
+            Cafe ca = new Cafe(tbCafeNome.Text, (int)numLotacao.Value);
             //verifica se o nome está vazio
             if (string.IsNullOrEmpty(ca.nome))
             {
@@ -46,6 +46,12 @@ namespace EventoGestao
                 labelCadastroCafeStatus.ForeColor = Color.Red;
                 tbCafeNome.Clear();
                 return;
+            }
+            if (numLotacao.Value <= 0)
+            {
+                labelCadastroCafeStatus.Text = "Insira uma lotação!";
+                labelCadastroCafeStatus.ForeColor = Color.Red;
+                tbCafeNome.Clear();
             }
             //verifica se esse café já existe
             foreach (var item in cafes)
@@ -55,6 +61,7 @@ namespace EventoGestao
                     labelCadastroCafeStatus.Text = "Este espaço de café ja existe!";
                     labelCadastroCafeStatus.ForeColor = Color.Red;
                     tbCafeNome.Clear();
+                    numLotacao.Value = 0;
                 }
             }
             //adiciona o cafe criado a lista de cafes
@@ -65,6 +72,7 @@ namespace EventoGestao
             labelCadastroCafeStatus.Text = "Espaço de café adicionado com sucesso!";
             labelCadastroCafeStatus.ForeColor = Color.Green;
             tbCafeNome.Clear();
+            numLotacao.Value = 0;
         }
     }
 }

@@ -38,7 +38,9 @@ namespace EventoGestao
             // 
             // btnOrganizar
             // 
+            this.btnOrganizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrganizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrganizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnOrganizar.Location = new System.Drawing.Point(67, 171);
             this.btnOrganizar.Name = "btnOrganizar";
             this.btnOrganizar.Size = new System.Drawing.Size(225, 35);
@@ -49,6 +51,8 @@ namespace EventoGestao
             // 
             // btnCloseOrganizar
             // 
+            this.btnCloseOrganizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseOrganizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCloseOrganizar.Location = new System.Drawing.Point(35, 35);
             this.btnCloseOrganizar.Name = "btnCloseOrganizar";
             this.btnCloseOrganizar.Size = new System.Drawing.Size(30, 30);
@@ -68,6 +72,7 @@ namespace EventoGestao
             // lvStatus
             // 
             this.lvStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.lvStatus.HideSelection = false;
             this.lvStatus.Location = new System.Drawing.Point(67, 286);
             this.lvStatus.Name = "lvStatus";
@@ -79,6 +84,7 @@ namespace EventoGestao
             // 
             this.labelOrganizar.AutoSize = true;
             this.labelOrganizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOrganizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelOrganizar.Location = new System.Drawing.Point(30, 101);
             this.labelOrganizar.Name = "labelOrganizar";
             this.labelOrganizar.Size = new System.Drawing.Size(229, 25);
@@ -89,6 +95,7 @@ namespace EventoGestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(668, 522);
             this.Controls.Add(this.labelOrganizar);
             this.Controls.Add(this.lvStatus);

@@ -47,6 +47,8 @@ namespace EventoGestao
             // 
             // btnCloseConsultaEvento
             // 
+            this.btnCloseConsultaEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseConsultaEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCloseConsultaEvento.Location = new System.Drawing.Point(35, 35);
             this.btnCloseConsultaEvento.Name = "btnCloseConsultaEvento";
             this.btnCloseConsultaEvento.Size = new System.Drawing.Size(30, 30);
@@ -59,6 +61,7 @@ namespace EventoGestao
             // 
             this.labelConsultaEvento.AutoSize = true;
             this.labelConsultaEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaEvento.Location = new System.Drawing.Point(30, 101);
             this.labelConsultaEvento.Name = "labelConsultaEvento";
             this.labelConsultaEvento.Size = new System.Drawing.Size(277, 25);
@@ -70,16 +73,18 @@ namespace EventoGestao
             this.labelConsultaEventoStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelConsultaEventoStatus.AutoSize = true;
             this.labelConsultaEventoStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaEventoStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaEventoStatus.Location = new System.Drawing.Point(525, 205);
             this.labelConsultaEventoStatus.Name = "labelConsultaEventoStatus";
-            this.labelConsultaEventoStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelConsultaEventoStatus.Size = new System.Drawing.Size(0, 17);
             this.labelConsultaEventoStatus.TabIndex = 17;
-            this.labelConsultaEventoStatus.Text = "Status";
             // 
             // btnConsultar
             // 
             this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnConsultar.Location = new System.Drawing.Point(504, 161);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(100, 30);
@@ -92,6 +97,7 @@ namespace EventoGestao
             // 
             this.labelConsultaEventoNome.AutoSize = true;
             this.labelConsultaEventoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaEventoNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaEventoNome.Location = new System.Drawing.Point(52, 168);
             this.labelConsultaEventoNome.Name = "labelConsultaEventoNome";
             this.labelConsultaEventoNome.Size = new System.Drawing.Size(101, 17);
@@ -100,6 +106,7 @@ namespace EventoGestao
             // 
             // tbConsultaEventoNome
             // 
+            this.tbConsultaEventoNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbConsultaEventoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConsultaEventoNome.Location = new System.Drawing.Point(159, 165);
             this.tbConsultaEventoNome.Name = "tbConsultaEventoNome";
@@ -109,6 +116,7 @@ namespace EventoGestao
             // lvEtapa1
             // 
             this.lvEtapa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.lvEtapa1.HideSelection = false;
             this.lvEtapa1.Location = new System.Drawing.Point(74, 295);
             this.lvEtapa1.Name = "lvEtapa1";
@@ -119,6 +127,7 @@ namespace EventoGestao
             // lvEtapa2
             // 
             this.lvEtapa2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvEtapa2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.lvEtapa2.HideSelection = false;
             this.lvEtapa2.Location = new System.Drawing.Point(338, 295);
             this.lvEtapa2.Name = "lvEtapa2";
@@ -131,6 +140,7 @@ namespace EventoGestao
             this.labelEtapa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelEtapa1.AutoSize = true;
             this.labelEtapa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEtapa1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelEtapa1.Location = new System.Drawing.Point(71, 275);
             this.labelEtapa1.Name = "labelEtapa1";
             this.labelEtapa1.Size = new System.Drawing.Size(61, 17);
@@ -142,6 +152,7 @@ namespace EventoGestao
             this.labelEtapa2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelEtapa2.AutoSize = true;
             this.labelEtapa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEtapa2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelEtapa2.Location = new System.Drawing.Point(335, 275);
             this.labelEtapa2.Name = "labelEtapa2";
             this.labelEtapa2.Size = new System.Drawing.Size(61, 17);
@@ -152,6 +163,7 @@ namespace EventoGestao
             // 
             this.labelSalaProcuradaNome.AutoSize = true;
             this.labelSalaProcuradaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaProcuradaNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelSalaProcuradaNome.Location = new System.Drawing.Point(74, 225);
             this.labelSalaProcuradaNome.Name = "labelSalaProcuradaNome";
             this.labelSalaProcuradaNome.Size = new System.Drawing.Size(40, 17);
@@ -162,6 +174,7 @@ namespace EventoGestao
             // 
             this.labelSalaNome.AutoSize = true;
             this.labelSalaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelSalaNome.Location = new System.Drawing.Point(120, 225);
             this.labelSalaNome.Name = "labelSalaNome";
             this.labelSalaNome.Size = new System.Drawing.Size(0, 17);
@@ -171,6 +184,7 @@ namespace EventoGestao
             // 
             this.labelSalaLotacao.AutoSize = true;
             this.labelSalaLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalaLotacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelSalaLotacao.Location = new System.Drawing.Point(404, 225);
             this.labelSalaLotacao.Name = "labelSalaLotacao";
             this.labelSalaLotacao.Size = new System.Drawing.Size(0, 17);
@@ -180,6 +194,7 @@ namespace EventoGestao
             // 
             this.labelSapaProcuradaLotacao.AutoSize = true;
             this.labelSapaProcuradaLotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSapaProcuradaLotacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelSapaProcuradaLotacao.Location = new System.Drawing.Point(335, 225);
             this.labelSapaProcuradaLotacao.Name = "labelSapaProcuradaLotacao";
             this.labelSapaProcuradaLotacao.Size = new System.Drawing.Size(63, 17);
@@ -190,6 +205,7 @@ namespace EventoGestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(684, 561);
             this.Controls.Add(this.labelSalaLotacao);
             this.Controls.Add(this.labelSapaProcuradaLotacao);

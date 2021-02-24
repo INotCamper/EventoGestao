@@ -38,25 +38,27 @@ namespace EventoGestao
             this.labelConsultaPessoaStatus = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelCafe2 = new System.Windows.Forms.Label();
+            this.labelSala2 = new System.Windows.Forms.Label();
+            this.labelCafe1 = new System.Windows.Forms.Label();
+            this.labelSala1 = new System.Windows.Forms.Label();
+            this.labelSobrenome = new System.Windows.Forms.Label();
+            this.labelNome = new System.Windows.Forms.Label();
+            this.labelSobrenomeProcurado = new System.Windows.Forms.Label();
+            this.labelNomeProcurado = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelCafe = new System.Windows.Forms.Label();
             this.labelSala = new System.Windows.Forms.Label();
             this.labelEtapa2 = new System.Windows.Forms.Label();
             this.labelEtapa1 = new System.Windows.Forms.Label();
-            this.labelNomeProcurado = new System.Windows.Forms.Label();
-            this.labelSobrenomeProcurado = new System.Windows.Forms.Label();
-            this.labelNome = new System.Windows.Forms.Label();
-            this.labelSobrenome = new System.Windows.Forms.Label();
-            this.labelSala1 = new System.Windows.Forms.Label();
-            this.labelCafe1 = new System.Windows.Forms.Label();
-            this.labelSala2 = new System.Windows.Forms.Label();
-            this.labelCafe2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCloseConsultaPessoa
             // 
+            this.btnCloseConsultaPessoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseConsultaPessoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnCloseConsultaPessoa.Location = new System.Drawing.Point(35, 35);
             this.btnCloseConsultaPessoa.Name = "btnCloseConsultaPessoa";
             this.btnCloseConsultaPessoa.Size = new System.Drawing.Size(30, 30);
@@ -69,6 +71,7 @@ namespace EventoGestao
             // 
             this.labelConsultaPessoaSobrenome.AutoSize = true;
             this.labelConsultaPessoaSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaPessoaSobrenome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaPessoaSobrenome.Location = new System.Drawing.Point(39, 204);
             this.labelConsultaPessoaSobrenome.Name = "labelConsultaPessoaSobrenome";
             this.labelConsultaPessoaSobrenome.Size = new System.Drawing.Size(85, 17);
@@ -79,6 +82,7 @@ namespace EventoGestao
             // 
             this.labelConsultaPessoaNome.AutoSize = true;
             this.labelConsultaPessoaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaPessoaNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaPessoaNome.Location = new System.Drawing.Point(39, 145);
             this.labelConsultaPessoaNome.Name = "labelConsultaPessoaNome";
             this.labelConsultaPessoaNome.Size = new System.Drawing.Size(49, 17);
@@ -87,6 +91,7 @@ namespace EventoGestao
             // 
             // tbConsultaPessoaSobrenome
             // 
+            this.tbConsultaPessoaSobrenome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbConsultaPessoaSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConsultaPessoaSobrenome.Location = new System.Drawing.Point(130, 203);
             this.tbConsultaPessoaSobrenome.Name = "tbConsultaPessoaSobrenome";
@@ -95,6 +100,7 @@ namespace EventoGestao
             // 
             // tbConsultaPessoaNome
             // 
+            this.tbConsultaPessoaNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.tbConsultaPessoaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConsultaPessoaNome.Location = new System.Drawing.Point(94, 142);
             this.tbConsultaPessoaNome.Name = "tbConsultaPessoaNome";
@@ -105,6 +111,7 @@ namespace EventoGestao
             // 
             this.labelConsultaPessoa.AutoSize = true;
             this.labelConsultaPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaPessoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaPessoa.Location = new System.Drawing.Point(30, 101);
             this.labelConsultaPessoa.Name = "labelConsultaPessoa";
             this.labelConsultaPessoa.Size = new System.Drawing.Size(210, 25);
@@ -116,16 +123,18 @@ namespace EventoGestao
             this.labelConsultaPessoaStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelConsultaPessoaStatus.AutoSize = true;
             this.labelConsultaPessoaStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaPessoaStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.labelConsultaPessoaStatus.Location = new System.Drawing.Point(499, 193);
             this.labelConsultaPessoaStatus.Name = "labelConsultaPessoaStatus";
-            this.labelConsultaPessoaStatus.Size = new System.Drawing.Size(48, 17);
+            this.labelConsultaPessoaStatus.Size = new System.Drawing.Size(0, 17);
             this.labelConsultaPessoaStatus.TabIndex = 15;
-            this.labelConsultaPessoaStatus.Text = "Status";
             // 
             // btnConsultar
             // 
             this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnConsultar.Location = new System.Drawing.Point(475, 145);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(100, 30);
@@ -156,6 +165,80 @@ namespace EventoGestao
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 226);
             this.panel1.TabIndex = 16;
+            // 
+            // labelCafe2
+            // 
+            this.labelCafe2.AutoSize = true;
+            this.labelCafe2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCafe2.Location = new System.Drawing.Point(115, 191);
+            this.labelCafe2.Name = "labelCafe2";
+            this.labelCafe2.Size = new System.Drawing.Size(0, 17);
+            this.labelCafe2.TabIndex = 27;
+            // 
+            // labelSala2
+            // 
+            this.labelSala2.AutoSize = true;
+            this.labelSala2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSala2.Location = new System.Drawing.Point(115, 165);
+            this.labelSala2.Name = "labelSala2";
+            this.labelSala2.Size = new System.Drawing.Size(0, 17);
+            this.labelSala2.TabIndex = 26;
+            // 
+            // labelCafe1
+            // 
+            this.labelCafe1.AutoSize = true;
+            this.labelCafe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCafe1.Location = new System.Drawing.Point(116, 122);
+            this.labelCafe1.Name = "labelCafe1";
+            this.labelCafe1.Size = new System.Drawing.Size(0, 17);
+            this.labelCafe1.TabIndex = 25;
+            // 
+            // labelSala1
+            // 
+            this.labelSala1.AutoSize = true;
+            this.labelSala1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSala1.Location = new System.Drawing.Point(115, 96);
+            this.labelSala1.Name = "labelSala1";
+            this.labelSala1.Size = new System.Drawing.Size(0, 17);
+            this.labelSala1.TabIndex = 24;
+            // 
+            // labelSobrenome
+            // 
+            this.labelSobrenome.AutoSize = true;
+            this.labelSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSobrenome.Location = new System.Drawing.Point(117, 50);
+            this.labelSobrenome.Name = "labelSobrenome";
+            this.labelSobrenome.Size = new System.Drawing.Size(0, 17);
+            this.labelSobrenome.TabIndex = 23;
+            // 
+            // labelNome
+            // 
+            this.labelNome.AutoSize = true;
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.Location = new System.Drawing.Point(81, 19);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(0, 17);
+            this.labelNome.TabIndex = 22;
+            // 
+            // labelSobrenomeProcurado
+            // 
+            this.labelSobrenomeProcurado.AutoSize = true;
+            this.labelSobrenomeProcurado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSobrenomeProcurado.Location = new System.Drawing.Point(26, 50);
+            this.labelSobrenomeProcurado.Name = "labelSobrenomeProcurado";
+            this.labelSobrenomeProcurado.Size = new System.Drawing.Size(85, 17);
+            this.labelSobrenomeProcurado.TabIndex = 21;
+            this.labelSobrenomeProcurado.Text = "Sobrenome:";
+            // 
+            // labelNomeProcurado
+            // 
+            this.labelNomeProcurado.AutoSize = true;
+            this.labelNomeProcurado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeProcurado.Location = new System.Drawing.Point(26, 19);
+            this.labelNomeProcurado.Name = "labelNomeProcurado";
+            this.labelNomeProcurado.Size = new System.Drawing.Size(49, 17);
+            this.labelNomeProcurado.TabIndex = 20;
+            this.labelNomeProcurado.Text = "Nome:";
             // 
             // label3
             // 
@@ -217,84 +300,11 @@ namespace EventoGestao
             this.labelEtapa1.TabIndex = 14;
             this.labelEtapa1.Text = "Etapa 1:";
             // 
-            // labelNomeProcurado
-            // 
-            this.labelNomeProcurado.AutoSize = true;
-            this.labelNomeProcurado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeProcurado.Location = new System.Drawing.Point(26, 19);
-            this.labelNomeProcurado.Name = "labelNomeProcurado";
-            this.labelNomeProcurado.Size = new System.Drawing.Size(49, 17);
-            this.labelNomeProcurado.TabIndex = 20;
-            this.labelNomeProcurado.Text = "Nome:";
-            // 
-            // labelSobrenomeProcurado
-            // 
-            this.labelSobrenomeProcurado.AutoSize = true;
-            this.labelSobrenomeProcurado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSobrenomeProcurado.Location = new System.Drawing.Point(26, 50);
-            this.labelSobrenomeProcurado.Name = "labelSobrenomeProcurado";
-            this.labelSobrenomeProcurado.Size = new System.Drawing.Size(85, 17);
-            this.labelSobrenomeProcurado.TabIndex = 21;
-            this.labelSobrenomeProcurado.Text = "Sobrenome:";
-            // 
-            // labelNome
-            // 
-            this.labelNome.AutoSize = true;
-            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(81, 19);
-            this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(0, 17);
-            this.labelNome.TabIndex = 22;
-            // 
-            // labelSobrenome
-            // 
-            this.labelSobrenome.AutoSize = true;
-            this.labelSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSobrenome.Location = new System.Drawing.Point(117, 50);
-            this.labelSobrenome.Name = "labelSobrenome";
-            this.labelSobrenome.Size = new System.Drawing.Size(0, 17);
-            this.labelSobrenome.TabIndex = 23;
-            // 
-            // labelSala1
-            // 
-            this.labelSala1.AutoSize = true;
-            this.labelSala1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSala1.Location = new System.Drawing.Point(115, 96);
-            this.labelSala1.Name = "labelSala1";
-            this.labelSala1.Size = new System.Drawing.Size(0, 17);
-            this.labelSala1.TabIndex = 24;
-            // 
-            // labelCafe1
-            // 
-            this.labelCafe1.AutoSize = true;
-            this.labelCafe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCafe1.Location = new System.Drawing.Point(116, 122);
-            this.labelCafe1.Name = "labelCafe1";
-            this.labelCafe1.Size = new System.Drawing.Size(0, 17);
-            this.labelCafe1.TabIndex = 25;
-            // 
-            // labelSala2
-            // 
-            this.labelSala2.AutoSize = true;
-            this.labelSala2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSala2.Location = new System.Drawing.Point(115, 165);
-            this.labelSala2.Name = "labelSala2";
-            this.labelSala2.Size = new System.Drawing.Size(0, 17);
-            this.labelSala2.TabIndex = 26;
-            // 
-            // labelCafe2
-            // 
-            this.labelCafe2.AutoSize = true;
-            this.labelCafe2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCafe2.Location = new System.Drawing.Point(115, 191);
-            this.labelCafe2.Name = "labelCafe2";
-            this.labelCafe2.Size = new System.Drawing.Size(0, 17);
-            this.labelCafe2.TabIndex = 27;
-            // 
             // ConsultaPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(684, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelConsultaPessoaStatus);
