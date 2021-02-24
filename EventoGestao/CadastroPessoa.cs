@@ -74,6 +74,7 @@ namespace EventoGestao
             //Informa que a pessoa foi adicionada com sucesso
             labelCadastroPessoaStatus.Text = "Pessoa adicionada com sucesso!";
             labelCadastroPessoaStatus.ForeColor = Color.Green;
+            //limpa a interface
             tbCadastroPessoaNome.Clear();
             tbCadastroPessoaSobrenome.Clear();
         }

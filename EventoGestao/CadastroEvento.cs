@@ -61,7 +61,7 @@ namespace EventoGestao
                     labelCadastroEventoStatus.Text = "Esta sala de evento já existe!";
                     labelCadastroEventoStatus.ForeColor = Color.Red;
                     tbEventoNome.Clear();
-                    numLotacao.Value = 1;
+                    numLotacao.Value = 0;
                 }
             }
             //adiciona o evento ao grupo de eventos
@@ -71,6 +71,7 @@ namespace EventoGestao
             //Informa que o evento foi adicionado com sucesso
             labelCadastroEventoStatus.Text = "Sala de evento adicionado com sucesso!";
             labelCadastroEventoStatus.ForeColor = Color.Green;
+            //limpa a interface
             tbEventoNome.Clear();
             numLotacao.Value = 0;
         }

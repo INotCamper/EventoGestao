@@ -47,6 +47,7 @@ namespace EventoGestao
                 tbCafeNome.Clear();
                 return;
             }
+            //verifica se a lotação está vazia
             if (numLotacao.Value <= 0)
             {
                 labelCadastroCafeStatus.Text = "Insira uma lotação!";
@@ -71,6 +72,7 @@ namespace EventoGestao
             //indica que o cafe foi adicionado com sucesso
             labelCadastroCafeStatus.Text = "Espaço de café adicionado com sucesso!";
             labelCadastroCafeStatus.ForeColor = Color.Green;
+            //limpa a interface
             tbCafeNome.Clear();
             numLotacao.Value = 0;
         }

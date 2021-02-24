@@ -41,6 +41,7 @@ namespace EventoGestao
             eventos = dt.JsonDeserializeEvento(fileEvento);
             cafes = dt.JsonDeserializeCafe(fileCafe);
 
+            //verifica se os arquivos existem
             if (pessoas == null || pessoas.Count <= 0)
             {
                 CreateAndAddNewErrorListItem("Não foi possível achar a lista de pessoas, ou nenhuma pessoa foi adicionada");
